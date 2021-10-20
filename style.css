@@ -17,13 +17,34 @@ body {
 body {
   display: grid;
   place-items: center;
+  background-image: url(images/bg.png);
+  background-size: cover;
 }
 
-main {
-  background: url(images/background.svg);
+.glassEffect {
+  width: 375px;
+  height: 812px;
+  position: absolute;
+  backdrop-filter: saturate(180%) blur(15px);
+  background-color: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 0;
+}
+.glassBG {
+  background: url(images/Mobile.png);
   width: 375px;
   height: 812px;
   border-radius: 0.5rem;
+  position: absolute;
+  z-index: 1;
+}
+main {
+  width: 375px;
+  height: 812px;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.411);
+  opacity: 1;
+  z-index: 5;
 }
 
 .container {
@@ -88,4 +109,5 @@ ul {
 
 li img {
   border-radius: 0.2rem;
+  opacity: 0.6;
 }
