@@ -19,7 +19,7 @@ body {
 body {
   display: grid;
   place-items: normal center;
-  background-image: url(images/bg.png);
+  background-image: url(images/background.webp);
   background-size: cover;
 }
 
@@ -28,119 +28,84 @@ body {
   z-index: 60;
 }
 
-#quebra {
-  position: absolute;
-  z-index: 50;
-  top: 154px;
-  left: auto;
-  right: auto;
-}
-
 .glassEffect {
   width: var(--widthBadge);
   height: var(--heightBadge);
   position: absolute;
   top: 128px;
   border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.04);
-  backdrop-filter: saturate(180%) blur(15px);
-  -webkit-backdrop-filter: blur(15px);
+  background-color: rgba(126, 126, 126, 0.212);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.411);
   z-index: 0;
 }
-
 main {
   background: url(images/badge.png);
   width: var(--widthBadge);
   height: var(--heightBadge);
   border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.411);
   opacity: 1;
   z-index: 5;
   position: absolute;
   top: 128px;
 }
-
 .container {
   max-width: 250px;
   margin: 0 auto;
   text-align: center;
-
   color: var(--grey);
 }
-
 .avatar {
   width: auto 0;
   margin: 4.6rem auto 0;
   position: relative;
 }
-
 .avatar span {
   position: absolute;
   top: -15px;
   z-index: 1;
 }
-
 .avatar > img {
   width: 10rem;
   height: 11.5rem;
   object-fit: cover;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
-
 h1 {
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-
 a {
   color: var(--grey);
   text-decoration: none;
-
   margin-top: 0.25rem;
-
   display: flex;
   gap: 0.75rem;
-
   justify-content: center;
   align-items: center;
 }
-
 p {
   margin-top: 1.5rem;
-}
 
+  margin-bottom: 0.5rem;
+}
+.build {
+  font-weight: 700;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(90deg, #ff008e, #ffcd1e);
+}
 ul {
   margin-top: 2rem;
-
   list-style: none;
   padding: 0;
   display: flex;
   gap: 0.5rem;
-
   justify-content: center;
 }
-
 li img {
   border-radius: 0.2rem;
   opacity: 0.6;
-}
-
-/* MODAL */
-#modal {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.68);
-  z-index: 999;
-  /* display: none; */
-}
-
-#modalBox {
-  position: absolute;
-  width: 60rem;
-  height: 40rem;
-  background-color: white;
-  border-radius: 10px;
 }

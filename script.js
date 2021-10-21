@@ -1,9 +1,9 @@
 const getName = prompt('Qual o seu nome?')
-let getGitHub = prompt('Perfil do github')
-let getYoutube = prompt('Perfil do youtube', getGitHub)
-let getFacebook = prompt('Perfil do facebook', getYoutube)
-let getInstagram = prompt('Perfil do instagram', getFacebook)
-let getTwitter = prompt('Perfil do twitter', getInstagram)
+let getGitHub = prompt('github.com/')
+let getYoutube = prompt('youtube.com/', getGitHub)
+let getFacebook = prompt('facebook.com/', getYoutube)
+let getInstagram = prompt('instagram.com/', getFacebook)
+let getTwitter = prompt('twitter.com/', getInstagram)
 
 const linksSocialMedia = {
   github: getGitHub,
@@ -31,3 +31,8 @@ function setAvatar() {
   userAvatar.src = `https://github.com/${getGitHub}.png`
 }
 setAvatar()
+
+function setLinkGithub() {
+  linkGithub.href = `https://github.com/${getGitHub}`
+}
+setLinkGithub()
