@@ -7,6 +7,8 @@ html,
 body {
   --black: hsl(240, 6%, 13%);
   --grey: hsl(240, 9%, 89%);
+  --widthBadge: 358px;
+  --heightBadge: 540px;
 
   height: 100%;
   font-family: 'Ubuntu', sans-serif;
@@ -22,8 +24,8 @@ body {
 }
 
 .glassEffect {
-  width: 375px;
-  height: 812px;
+  width: var(--widthBadge);
+  height: var(--heightBadge);
   position: absolute;
   border-radius: 1rem;
   backdrop-filter: saturate(180%) blur(15px);
@@ -32,22 +34,25 @@ body {
   z-index: 0;
 }
 .glassBG {
-  background: url(images/Mobile.png);
-  width: 375px;
-  height: 812px;
+  background: url(images/mask.png);
+  width: var(--widthBadge);
+  height: var(--heightBadge);
   border-radius: 1rem;
   position: absolute;
   z-index: 1;
 }
 main {
-  width: 375px;
-  height: 812px;
+  width: var(--widthBadge);
+  height: var(--heightBadge);
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.411);
   opacity: 1;
   z-index: 5;
 }
-
+#corda {
+  position: absolute;
+  top: 0;
+}
 .container {
   max-width: 250px;
   margin: 0 auto;
@@ -57,8 +62,8 @@ main {
 }
 
 .avatar {
-  width: 10rem;
-  margin: 11.5rem auto 0;
+  width: auto 0;
+  margin: 4.6rem auto 0;
   position: relative;
 }
 
@@ -77,7 +82,7 @@ main {
 
 h1 {
   font-size: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 a {
@@ -94,11 +99,11 @@ a {
 }
 
 p {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 ul {
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   list-style: none;
   padding: 0;
