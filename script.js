@@ -20,23 +20,6 @@ function changeSocialMediaLinks() {
 }
 changeSocialMediaLinks()
 
-/*
-function changeUserGitHub() {
-  userGithub.textContent = getGitHub
-}
-changeUserGitHub()
-
-function setAvatar() {
-  userAvatar.src = `https://github.com/${getGitHub}.png`
-}
-setAvatar()
-
-function setLinkGithub() {
-  linkGithub.href = `https://github.com/${getGitHub}`
-}
-setLinkGithub()
-*/
-
 function getGithHubProfileInfos() {
   const url = `https://api.github.com/users/${getGitHub}`
 
