@@ -19,9 +19,7 @@
 
   <body>
     <img id="faixa" src="images/faixa.png" alt="" />
-
     <div class="glassEffect"></div>
-
     <main>
       <div class="container">
         <div class="avatar" id="avatar">
@@ -68,6 +66,23 @@
         </ul>
       </div>
     </main>
+
+    <div class="modal-overlay active">
+      <div class="modal">
+        <p>Insira seus dados para gerar o crachá virtual</p>
+        <fieldset id="userDataInput">
+          <legend>Links personalizados</legend>
+          <div class="socialInput">
+            <label for="getGitHub">github.com/</label>
+            <input type="text" id="getGitHub"  />
+          </div>
+          <div class="socialInput">
+            <label for="getYoutube">youtube.com/</label>
+            <input type="text" id="getGitHub" placeholder="Maik Brito"/>
+          </di>
+        </fieldset>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

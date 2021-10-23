@@ -109,3 +109,37 @@ li img {
   border-radius: 0.2rem;
   opacity: 0.6;
 }
+
+/***********************
+******** MODAL *********
+************************/
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(73, 71, 71);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: #f0f2f5;
+  padding: 2.4rem;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.socialInput {
+  margin-bottom: 10px;
+}

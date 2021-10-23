@@ -1,8 +1,16 @@
-let getGitHub = prompt('github.com/')
-let getYoutube = prompt('youtube.com/', getGitHub)
-let getFacebook = prompt('facebook.com/', getYoutube)
-let getInstagram = prompt('instagram.com/', getFacebook)
-let getTwitter = prompt('twitter.com/', getInstagram)
+const Modal = {
+  close() {
+    // fechar o modal
+    // remover a class active do modal
+    document.querySelector('.modal-overlay').classList.remove('active')
+  }
+}
+
+//let getGitHub = prompt('github.com/')
+//let getYoutube = prompt('youtube.com/', getGitHub)
+//let getFacebook = prompt('facebook.com/', getYoutube)
+//let getInstagram = prompt('instagram.com/', getFacebook)
+//let getTwitter = prompt('twitter.com/', getInstagram)
 
 const linksSocialMedia = {
   github: getGitHub,
