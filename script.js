@@ -1,4 +1,3 @@
-const getName = prompt('Qual o seu nome?')
 let getGitHub = prompt('github.com/')
 let getYoutube = prompt('youtube.com/', getGitHub)
 let getFacebook = prompt('facebook.com/', getYoutube)
@@ -13,15 +12,15 @@ const linksSocialMedia = {
   twitter: getTwitter
 }
 
-function changeSocialMedia() {
-  userName.textContent = getName
+function changeSocialMediaLinks() {
   for (let li of socialLinks.children) {
     const social = li.getAttribute('class')
     li.children[0].href = `https://${social}.com/${linksSocialMedia[social]}`
   }
 }
-changeSocialMedia()
+changeSocialMediaLinks()
 
+/*
 function changeUserGitHub() {
   userGithub.textContent = getGitHub
 }
@@ -36,3 +35,19 @@ function setLinkGithub() {
   linkGithub.href = `https://github.com/${getGitHub}`
 }
 setLinkGithub()
+*/
+
+function getGithHubProfileInfos() {
+  const url = `https://api.github.com/users/${getGitHub}`
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userName.textContent = data.name
+      usernameGitHub.textContent = data.login
+      userLink.href = data.html_url
+      document.title = `${data.name} - DoWhile 2021`
+      userAvatar.src = data.avatar_url
+    })
+}
+getGithHubProfileInfos()
