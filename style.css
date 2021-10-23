@@ -116,7 +116,7 @@ li img {
 .modal-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgb(73, 71, 71);
+  background-color: rgba(73, 71, 71, 0.416);
   position: fixed;
   top: 0;
   display: flex;
@@ -133,13 +133,80 @@ li img {
 }
 
 .modal {
-  background: #f0f2f5;
-  padding: 2.4rem;
-  position: relative;
+  width: var(--widthBadge);
+  height: var(--heightBadge);
+  background: #121214;
+  text-align: center;
+  top: 128px;
+  position: absolute;
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 1rem;
+  border: 2px solid #121214;
+}
+.modal p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  color: #a8a8b3;
+  font-size: 1.2rem;
+}
+/************************************/
+.formulario {
+  margin-top: 2rem;
+  display: block;
+}
+.campo {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+.campo img {
+  width: 10%;
+  padding: 0 10px;
+}
+.campo input {
+  font-size: 1rem;
+  margin: 5px 0;
+  padding: 0.8rem;
+  width: 12rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(39, 39, 39);
+  color: #ffcd1e;
+}
+.campo input::placeholder {
+  color: #7f7f867a;
+}
+
+i {
+  margin-right: 15px;
+  font-size: 1.2rem;
+  color: rgba(103, 103, 103, 0.56);
+}
+
+button {
+  margin-top: 3rem;
+  padding: 0.8rem;
+  width: 70%;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background-color: #ffcd1e;
+  color: #09090a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ff7a29;
+}
+/*
 .socialInput {
   margin-bottom: 10px;
 }
+
+.input {
+  width: 50%;
+}
+*/

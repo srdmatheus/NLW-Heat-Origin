@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d15265e4a6.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -67,20 +68,52 @@
       </div>
     </main>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay active">
       <div class="modal">
-        <p>Insira seus dados para gerar o crachá virtual</p>
-        <fieldset id="userDataInput">
-          <legend>Links personalizados</legend>
-          <div class="socialInput">
-            <label for="getGitHub">github.com/</label>
-            <input type="text" id="getGitHub"  />
+        <p>CRIE SEU CRACHÁ 
+          <br> DOWHILE 2021</p>
+
+        <div class="formulario">
+          <div class="campo">
+            <i class="fab fa-github"></i>
+            <input
+              id="getGitHub"
+              type="text"
+              placeholder="github username"
+            />
+          <div class="campo">
+            <i class="fab fa-youtube"></i>
+            <input
+              id="getYoutube"
+              type="text"
+              placeholder="youtube username"
+            />
+          <div class="campo">
+            <i class="fab fa-facebook"></i>
+            <input
+              id="getFacebook"
+              type="text"
+              placeholder="facebook username"
+            />
+          <div class="campo">
+            <i class="fab fa-instagram"></i>
+            <input
+              id="getInstagram"
+              type="text"
+              placeholder="instagram username"
+            />
           </div>
-          <div class="socialInput">
-            <label for="getYoutube">youtube.com/</label>
-            <input type="text" id="getGitHub" placeholder="Maik Brito"/>
-          </di>
-        </fieldset>
+          <div class="campo">
+            <i class="fab fa-twitter"></i>
+            <input
+              id="getTwitter"
+              type="text"
+              placeholder="twitter username"
+            />
+          </div>
+          
+        </div>
+        <button onclick="Modal.close()" id="submit">GERAR CRACHÁ</button>
       </div>
     </div>
     <script src="script.js"></script>
