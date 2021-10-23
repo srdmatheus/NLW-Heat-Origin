@@ -6,7 +6,7 @@
   <a href="#funcionalidades-extras">Funcionalidades</a>
 </p>
 <p align="center">
-  <img alt="Preview" src=".github/preview.png" width="100%">
+  <img alt="Preview" src="https://repository-images.githubusercontent.com/418775020/5f87d109-6128-43b7-bdbd-056624dbdbc4" width="100%">
 </p>
 
 ## Tecnologias
