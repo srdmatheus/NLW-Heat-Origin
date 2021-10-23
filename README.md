@@ -23,7 +23,7 @@ Bibliotecas
 <br>
 
 ## Projeto
-Este crachá digital foi criado durante o evento NLW/Heat disponibilizado pela @rocketseat-education. Fui guiado durante 5 aulas pelos professores @maykbrito e @jakeliny. Ao final, tive a oportunidade de inserir funcionalidades extras ao projeto.
+Este crachá digital foi criado durante o evento NLW/Heat disponibilizado pela @rocketseat-education. Fui guiado durante 5 aulas pelos professores [@maykbrito](https://www.github.com/maykbrito) e [@jakeliny](https://github.com/jakeliny). Ao final, tive a oportunidade de inserir funcionalidades extras ao projeto.
 
 <br>
 
