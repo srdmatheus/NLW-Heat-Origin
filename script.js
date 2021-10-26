@@ -41,7 +41,6 @@ submit.addEventListener('click', function (e) {
         userAvatar.src = data.avatar_url
       })
   }
-
-  changeSocialMediaLinks()
   getGithHubProfileInfos()
+  changeSocialMediaLinks()
 })
