@@ -44,3 +44,4 @@ submit.addEventListener('click', function (e) {
   getGithHubProfileInfos()
   changeSocialMediaLinks()
 })
+
